@@ -271,7 +271,7 @@ def login():
 
 
 @app.route('/logout')
-def logout():
+def logout()
     session.pop('logged_in', None)
     flash("You've logged out")
     return redirect(url_for('index'))
